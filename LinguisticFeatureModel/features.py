@@ -149,4 +149,3 @@ def majorfunc(line):
     totNN, totJJ, totIN, totDT, totVB, totRB, totPRP, totCC = calcPOS(line) # calculate POS tags for each token
 
     return [(numWords - numPunc),(((numWords - numPunc)+1)/(numSentences+1)), numUniqueWords, ((numImme +1)/(numWords+1)), numBrand, ((numChars+1)/(numWords+1)), numConnect, numDigits,((numVB + 1) /(numNN + 1)), totJJ, totIN, totRB]
-

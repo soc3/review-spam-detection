@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Result </title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="HotelName">
+				ML APP
+			</div>
+			<h2> Spam Detector for Hotel Reviews </h2>
+		</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align:center;">
+		<b> Result For Review </b>
+		{{msg}}
+	</p><br><br>
+	<div class="results">
+		{% if prediction == 1%}
+		<h2 style="color:red;">Spam</h2>
+		{% elif prediction == 0%}
+		<h2 style="color:red;">Its not a Spam (Its a ham)</h2>
+		{% endif %}
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Spam Detection </title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="HotelName">
+				ML APP
+			</div>
+			<h2> Spam Detector for Hotel Reviews </h2>
+		</div>
+	</header>
+	<div class="ml-container">
+		<form action="{{ url_for('predict2')}}" method="POST">
+			<p>
+				Enter Your Review Here :
+			</p>
+			<textarea name="raw_text" rows="4" cols="50"></textarea>
+			<br/>
+			<input type="submit" class="btn-info" value="predict">
+		</form>
+	</div>
+</body>
+</html>
